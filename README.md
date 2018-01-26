@@ -8,6 +8,8 @@ This is an alternative implementation to the standard `lib/prime.rb`.  It is (al
 * Replace `require "prime"` with `require "faster_prime"`.
 * Replace `Prime` with `FasterPrime`.
 
+If you want to use this without the core extension, you can use `require "faster_prime/base"` and `FasterPrime.prime?(num)` instead of `Integer#prime?`.
+
 ## Benchmark
 
 ### `Integer#prime?`
