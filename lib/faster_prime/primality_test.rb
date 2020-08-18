@@ -75,18 +75,18 @@ module FasterPrime
       #
       # (1) simplest
       #
-      #   Leonhard::APRCL.prime?(N) #=> true or false
+      #   APRCL.prime?(N) #=> true or false
       #
       # (2) reuse-table
       #
-      #   aprcl = Leonhard::APRCL.new(B)
+      #   aprcl = APRCL.new(B)
       #   aprcl.prime?(N1) #=> true or false
       #   aprcl.prime?(N2) #=> true or false
       #   aprcl.bound #=> upper bound (>= B)
       #
       # (3) manual-t (for test or debug)
       #
-      #   aprcl = Leonhard::APRCP.new(B)
+      #   aprcl = APRCP.new(B)
       #   aprcl.set_t(t)
       #   aprcl.prime?(N) #=> true or false
 
