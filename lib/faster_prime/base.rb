@@ -1,3 +1,4 @@
+require "faster_prime/version"
 require "faster_prime/utils"
 require "faster_prime/primality_test"
 require "faster_prime/prime_factorization"
@@ -5,8 +6,6 @@ require "faster_prime/sieve"
 require "faster_prime/core_ext"
 
 module FasterPrime
-  VERSION = "1.0.1"
-
   module Core
     include Enumerable
 
