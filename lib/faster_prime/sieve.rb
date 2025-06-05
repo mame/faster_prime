@@ -25,7 +25,10 @@ module FasterPrime
 
     def each(ubound = nil, &blk)
       if ubound && SMALL_PRIMES.last >= ubound
-        SMALL_PRIMES.each(&blk)
+        SMALL_PRIMES.each do |n|
+          break if n > ubound
+          yield n
+        end
         return
       end
 

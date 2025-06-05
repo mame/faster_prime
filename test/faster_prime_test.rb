@@ -20,6 +20,10 @@ class FasterPrimeTest < Minitest::Test
     assert_equal(primes, FasterPrime.lazy.drop(10000).take(30).to_a)
   end
 
+  def test_each_ubound
+    assert_equal(997, FasterPrime.each(1000).to_a.last)
+  end
+
   def test_prime?
     mersenne_primes = [2, 3, 5, 7, 13, 17, 19, 31, 61, 89, 107, 127, 521, 607]
     200.times do |n|
